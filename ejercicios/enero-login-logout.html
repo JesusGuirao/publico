@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina: Login logout
+alumno: Jesús Guirao Melero
+fecha: Enero de 2021
+-->
+
+<head>
+  <title>Web Proyecto Integrador</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="estilos.css"/>
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(47, 173, 223, 0.1) /* Azul al 10% */
+	}
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+	<header>
+		<h1>TÍTULO PRINCIPAL VISIBLE</h1> <!-- 1 y solo 1 por pagina -->
+	</header>
+	
+	<main> <!-- aqui podemos tambien usar section y article -->
+		<form name="miformulario" onsubmit="return guardaUsr()">
+		<label for="fname">Usuario: </label><br>
+		<input type="text" id="usuario" name="usuario" maxlength="25" required><br>
+		<input type="submit" value="Enviar">
+		</form>
+		<p id="aqui">(aqui veremos el usuario activo)</p>
+	</main>
+	
+	<footer>
+	
+	</footer>
+	
+
+	<script>
+	// seccion de codigo javascript 
+
+		function guardaUsr() {
+			var x=document.forms["miformulario"]["usuario"].value;
+			sessionStorage.setItem("nomUsr",x);
+			document.getElementById("aqui").innerHTML = sessionStorage.getItem("nomUsr");
+			return false;
+		}
+	</script>
+</body>
+</html>
