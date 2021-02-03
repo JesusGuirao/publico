@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+  <title>Validación Formularios</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="12-ene-formulario.css">
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+
+<h1>VALIDAR FORMULARIOS</h1>
+<form action="12-ene-formulario.js">
+  <label for="nom">Nombre:</label><br>
+  <input type="text" id="nom" name="nom" maxlength="30" required><br>
+  <label for="ape">Apellido:</label><br>
+  <input type="text" id="ape" name="ape" maxlength="30" required><br><br>
+  <label for="edad">Edad:</label><br>
+  <input type="number" id="lname" name="edad" min="18" max="120" required><br><br>
+  <label for="fnaci">Fecha Nacimiento:</label><br>
+  <input type="date" id="fnaci" name="fnaci" min="1900-01-01" max="2004-01-01" required><br><br>
+  <label for="Cpref">Color Preferido:</label><br>
+  <input type="color" id="Cpref" name="Cpref" required><br><br>
+  <input type=button onclick="pregunta()" value="Enviar">
+
+</form> 
+
+
+<script language="JavaScript">
+  function pregunta(){
+      if (confirm('FORMULARIO RECIBIDO')){
+         document.tuformulario.submit()
+      }
+  }
+  </script>
+</body>
+</html>
