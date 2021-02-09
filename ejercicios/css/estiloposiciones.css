@@ -1,0 +1,43 @@
+body {
+  background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+}
+
+.posicionado {
+  background-color: yellow;
+  position: static;   /* Es el normal de html/css, que se aplica por defecto*/
+  left: 50px;
+  top: 50px;
+}
+
+.posicionado-relative {
+  background-color: blue;
+  position: relative;
+  left: 50px;
+  top: 60px;
+}
+
+.posicionado-absolute {
+  background-color: rgb(0, 255, 128);
+  position: absolute;
+  left: 50px;
+  top: 60px;
+}
+
+.posicionado-fixed {
+  background-color: rgb(3, 180, 250);
+  position: fixed;
+  left: 50px;
+  top: 60px;
+}
+
+.posicionado-sticky {
+  background-color: rgb(250, 3, 250);
+  position: sticky;
+  left: 50px;
+  top: 60px;
+}
+
+
+
+
+
