@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(179, 179, 243, 0.1) /* Azul al 10% */
+}
+.imgD {
+  float: right;
+  margin: 10px;
+  width: 30%;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.imgI {
+  float: left;
+  clear: right ;
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
