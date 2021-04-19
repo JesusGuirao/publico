@@ -119,7 +119,6 @@ li.dropdown {
 }
 
 /*Tarjeta*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 html,
 body {
@@ -130,10 +129,8 @@ body {
 body {
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
   letter-spacing: 0.03em;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .title {
