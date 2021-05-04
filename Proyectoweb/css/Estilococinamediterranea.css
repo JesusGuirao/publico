@@ -2,10 +2,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 body {
-  background-image: url('../media/prueba\ fondo.HEIC');
+  /*background-image: url('../media/prueba\ fondo.HEIC');*/
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
 }
 
 /* TODO SOBRE EL PIE de PAGINA*/
@@ -96,7 +103,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: transparent;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -118,13 +125,7 @@ li.dropdown {
   display: block;
 }
 
-/*Tarjeta*/
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+/*Codigo intocable*/
 
 body {
   width: 100%;
@@ -133,58 +134,86 @@ body {
   line-height: 1.6;
 }
 
-.title {
-  text-align: center;
-  font-size: 40px;
-  color: #6a6a6a;
-  margin-top: 100px;
-  font-weight: 100;
-  font-family: 'Roboto', sans-serif;
-}
+/*Seccion del titulo */
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  height: 430px;
+#h1mediterraneo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-
-.container .card {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
-  box-shadow: 0 2px 2px ffffff;
-  overflow: hidden;
-  margin: 20px;
+  flex-direction: column;
   text-align: center;
-  transition: all 0.25s;
 }
 
-.container .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+/* Seccionsinsombrear la 3º y la 5º seccion */
+
+#tercerayquinta-seccion {
+  background-attachment: fixed;
+  height: 45vh; /* Esto es el alto de el hueco sombreado*/
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
 }
 
-.container .card img {
-  width: 330px;
-  height: 220px;
+#contenedor3y5 {
+  width: 80%; /*Esto es lo que el texto coge del contenedor a la hora de escribior*/
+  margin: auto;
+  flex-direction: row;
+  text-align: left;
 }
 
-.container .card h4 {
-  font-weight: 600;
+#tercerayquinta-seccion > h4 {
+  font-size: 7rem; /*tamaño fuente h3*/
+  font-weight: 100; /*El grosor de la letra*/
+  margin-bottom: 1.5rem; /*L separacion entre titulo y texto*/
 }
 
-.container .card p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
+/* Seccion sombreada */
+
+#seccionsombreada {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.905));
+  background-attachment: fixed;
+  height: 45vh; /* Esto es el alto de el hueco sombreado*/
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.container .card a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #3498db;
+#contenedor {
+  width: 80%; /*Esto es lo que el texto coge del contenedor a la hora de escribior*/
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.mitad {
+  /*width: 50%; /*Esto es lo que coge el contenedor en este caso la mitad el 50 porciento*/
+}
+
+#seccionsombreada-der > h3 {
+  font-size: 3rem; /*tamaño fuente h3*/
+  font-weight: 100; /*El grosor de la letra*/
+  margin-bottom: 1.5rem; /*L separacion entre titulo y texto*/
+  float: right;
+}
+
+#seccionsombreada-der > p {
+  margin-bottom: 4rem;
+  float: right;
+  text-align: right;
+}
+
+.imagerestaurantesombreadoi {
+  float: left;
+  width: 500px;
+  height: 300px;
+}
+
+.imagerestaurantesombreadod {
+  float: right;
+  width: 500px;
+  height: 300px;
+}
+
+.loshref {
+  color: #f5f5f5;
 }
