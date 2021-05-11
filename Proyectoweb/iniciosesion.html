@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trabajo Proyecto Integrador</title>
+    <link href="css/Estiloiniciosesion.css" rel="stylesheet" />
+    <script src="js/Scriptiniciarsesion.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+  </head>
+  <body>
+    <!--menu de la web-->
+    <center>
+      <header>
+        <div id="menu">
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="marbella.html">Marbella</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn"
+                >Tipos de Restaurantes</a
+              >
+              <div class="dropdown-content">
+                <a href="cocinamediterranea.html">Cocina Mediterranea</a>
+                <a href="PescadoYMarisco.html">PescadoYMarisco</a>
+                <a href="BaryTapas.html">Bares y Tabernas</a>
+                <li><a href="Top3.html">Top 3</a></li>
+                <li><a href="adomicilio.html">A Domicilio</a></li>
+                <li><a href="iniciosesion.html">Acceso Privado</a></li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </center>
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+    <center>
+      <div class="container">
+        <form name="InicioSesion" onsubmit="return guardaUsr()">
+          <label for="usuario"></label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Nombre Usuario.."
+          />
+          <label for="contraseña"></label>
+          <input
+            type="text"
+            id="contraseña"
+            name="contraseña"
+            placeholder="Contraseña.."
+          />
+          <br />
+          <input type="submit" value="Iniciar Sesión" />
+        </form>
+      </div>
+    </center>
+
+    <footer class="piepagina">
+      Nuestras Redes sociales
+      <div class="sm">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
