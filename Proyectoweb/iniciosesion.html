@@ -4,15 +4,17 @@
     <meta charset="utf-8" />
     <title>Trabajo Proyecto Integrador</title>
     <link href="css/Estiloiniciosesion.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/Scriptiniciarsesion.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
   </head>
-  <body>
+  <body onload="controlar()">
     <!--menu de la web-->
     <center>
       <header>
@@ -42,22 +44,28 @@
     <br /><br /><br />
     <center>
       <div class="container">
-        <form name="InicioSesion" onsubmit="return guardaUsr()">
-          <label for="usuario"></label>
+        <form
+          method="GET"
+          id="ingresar"
+          name="miFormulario"
+          onSubmit="return intentar()"
+        >
+          <label for="apellido"></label>
           <input
             type="text"
-            id="usuario"
-            name="usuario"
-            placeholder="Nombre Usuario.."
-          />
-          <label for="contraseña"></label>
+            id="usr"
+            name="formUsuario"
+            placeholder="Nombre Usuario..."
+            required
+          /><br />
+          <label for="apellido"></label>
           <input
-            type="text"
-            id="contraseña"
-            name="contraseña"
-            placeholder="Contraseña.."
-          />
-          <br />
+            type="password"
+            id="clv"
+            name="formClave"
+            placeholder="Contraseña"
+            required
+          /><br />
           <input type="submit" value="Iniciar Sesión" />
         </form>
       </div>
