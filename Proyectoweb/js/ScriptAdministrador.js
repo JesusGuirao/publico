@@ -3,7 +3,7 @@ if (!sessionStorage.getItem('usuarioLogueado')) {
   // estamos cargando la página teniendo un usuario logueado previamente
   // y con la sesión activa pues no se ha desconectado aún
   // ocultamos formulario de login y mostramos desconectar
-  window.location.href = '/publico/Proyectoweb/iniciosesion.html';
+  window.location.href = 'iniciosesion.html';
 }
 
 function desconectar() {

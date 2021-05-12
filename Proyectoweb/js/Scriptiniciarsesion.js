@@ -29,7 +29,7 @@ function controlar() {
     // estamos cargando la página teniendo un usuario logueado previamente
     // y con la sesión activa pues no se ha desconectado aún
     // ocultamos formulario de login y mostramos desconectar
-    window.location.href = '/publico/Proyectoweb/administrador.html';
+    window.location.href = 'administrador.html';
   } else {
     if (sessionStorage.getItem('usuarioIntentando')) {
       // estado 2 de nuestro diagrama de estados - transición
