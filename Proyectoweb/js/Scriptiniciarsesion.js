@@ -73,7 +73,7 @@ function validarXML() {
   };
   xhr.open(
     'GET',
-    'https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml',
+    'https://jesusguirao.github.io/publico/Proyectoweb/registrados.xml',
     true
   );
   xhr.send();
