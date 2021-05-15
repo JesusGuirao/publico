@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/Estiloadministrador.css" rel="stylesheet" />
     <title>Admin</title>
     <script src="js/ScriptAdministrador.js"></script>
   </head>
-  <body>
-    <h1>Usuario logeado</h1>
-    <button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
+  <body id="body">
+    <div class="container">
+      <h1>Estás logueado!</h1>
+      <button id="desconectar" onclick="desconectar()">
+        <b>DESCONECTAR</b>
+      </button>
+    </div>
+    <button onclick="cambiar();">Cambiar Fondo</button>
+    <footer class="piepagina">
+      Nuestras Redes sociales
+      <div class="sm">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
