@@ -12,7 +12,3 @@ function desconectar() {
   sessionStorage.removeItem('claveIntentando');
   location.reload();
 }
-
-// Funcion para cambiar el fondo de la pagina administrador
-function cambiar() {
-  document.getElementById('body').style.backgroundImage='url(../media/pruebafondo2.jpg)';
