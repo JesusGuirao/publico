@@ -9,60 +9,6 @@ body {
   padding: 0;
 }
 
-/* TODO SOBRE EL PIE de PAGINA*/
-
-.piepagina {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 75px;
-  background-color: rgb(46, 46, 46);
-  color: #333;
-  text-align: center;
-}
-
-.sm a {
-  display: inline-block;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #f5f5f5;
-  margin: 0 16px;
-  transition: 0.4s linear;
-  position: relative;
-}
-
-.sm a::before,
-.sm a::after {
-  content: '';
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: 0.4s linear;
-}
-
-.sm a:hover {
-  transform: scale(0.8);
-}
-
-.sm a:hover::before {
-  border-left: 4px solid;
-  border-right: 4px solid;
-  transform: skewX(20deg);
-}
-
-.sm a:hover::after {
-  border-top: 4px solid;
-  border-bottom: 4px solid;
-  transform: skewY(-20deg);
-}
-
 /*CSS SOBRE DOLLY*/
 
 .container {
@@ -129,7 +75,7 @@ body {
   cursor: pointer;
   float: right;
 }
-
+/*boton css*/
 #myBtn1 {
   width: 200px;
   font-size: 18px;
@@ -140,4 +86,73 @@ body {
   color: #fff;
   cursor: pointer;
   float: left;
+}
+
+/*Quien hay conectado*/
+#enlinea {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  float: center;
+  text-align: center;
+}
+
+/*KEN CSS */
+.image-wrap {
+  width: 900px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrap img {
+  width: 100%;
+  animation: infinite;
+
+  -ms-animation: move 40s ease;
+  -webkit-animation: move 40s ease;
+  -0-animation: move 40s ease;
+  -moz-animation: move 40s ease;
+  position: absolute;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    /* IE 9 */
+
+    -webkit-transform: scale(1);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1);
+    /* Opera */
+
+    -moz-transform: scale(1);
+    /* Firefox */
+  }
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    /* Firefox */
+  }
 }
