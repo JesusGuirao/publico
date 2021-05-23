@@ -6,6 +6,8 @@ body {
   background-image: url('../media/fondomar.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 /* TODO SOBRE EL PIE de PAGINA*/

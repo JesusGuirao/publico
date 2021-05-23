@@ -1,3 +1,6 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 body {
   background: url('../media/pruebafondo3.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
